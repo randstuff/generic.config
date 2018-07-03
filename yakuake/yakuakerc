@@ -1,0 +1,50 @@
+[$Version]
+update_info=yakuake.upd:2.9.9-startupnotification
+
+[Animation]
+Frames=0
+UseWMAssist=false
+
+[Appearance]
+Skin=breeze-minimal
+
+[Colors]
+CurrentPalette=Forty Colors
+
+[Desktop Entry]
+DefaultProfile=Shell.profile
+
+[Dialogs]
+FirstRun=false
+
+[DownloadDialog Settings]
+Height 1080=400
+Width 1920=700
+
+[Favorite Profiles]
+Favorites=
+
+[Shortcuts]
+decrease-window-height=none
+decrease-window-width=none
+grow-terminal-bottom=none
+grow-terminal-left=none
+grow-terminal-right=none
+grow-terminal-top=none
+increase-window-height=none
+increase-window-width=none
+new-session=Ctrl+Shift+N
+next-session=Ctrl+Shift+O
+next-terminal=Shift+Tab
+previous-session=Ctrl+Shift+I
+previous-terminal=Ctrl+Shift+Tab
+rename-session=Meta+Ctrl+R
+split-left-right=Ctrl+Shift+L
+split-top-bottom=Ctrl+Shift+T
+toggle-session-monitor-activity=none
+toggle-session-monitor-silence=none
+view-full-screen=Ctrl+Alt+F
+
+[Window]
+Height=70
+Screen=0

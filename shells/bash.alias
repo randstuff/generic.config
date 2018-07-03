@@ -1,0 +1,4 @@
+alias gogo='export GOPATH=$PWD'
+
+
+

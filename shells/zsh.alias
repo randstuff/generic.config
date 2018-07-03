@@ -1,0 +1,21 @@
+alias grep='grep --color=auto'
+
+alias ls='LC_COLLATE=C ls --color -h --group-directories-first'
+alias l='LC_COLLATE=C ls -l'
+alias lssh='LC_COLLATE=C ls -l *.sh'
+alias lx='LC_COLLATE=C ls -l *.sh'
+alias lt='LC_COLLATE=C ls -lrt'
+
+alias llt='LC_COLLATE=C ls -lhdrt */' 
+alias lld='LC_COLLATE=C ls -ahldrt */' 
+
+alias grep='grep --color=auto'
+
+        
+# source "$HOME/.gvm/scripts/gvm"
+# [[ -s "$HOME/.gvm/scripts/gvm" ]] && source "$HOME/.gvm/scripts/gvm"
+
+#alias rdm='source /opt/qt59/bin/qt59-env.sh ; /usr/share/redis-desktop-manager/bin/rdm ' 
+
+#eval `keychain --eval id_rsa`
+
