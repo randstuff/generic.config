@@ -1,0 +1,80 @@
+background no
+alignment top_right
+font FreeSans:size=10
+#xftfont sans:size=10
+use_xft yes
+xftalpha 0.9
+update_interval 1
+total_run_times 0
+own_window yes
+#own_window_type dock
+own_window_transparent yes
+own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
+own_window_argb_visual true
+own_window_argb_value 180
+own_window_colour   # background color 
+
+double_buffer yes
+minimum_size 500 80   # box size 
+# maximum_size 220
+draw_shades no
+draw_outline no
+draw_borders no
+draw_graph_borders yes
+default_color 0A465B
+default_shade_color 101010
+
+gap_x 40#320
+#gap_y 860#530
+no_buffers yes
+cpu_avg_samples 1
+uppercase no
+# border_inner_margin 15
+# default_bar_size 144 6
+
+# colors
+
+own_window_colour 0D1E28 # 0D1E28 # background color 
+minimum_size 300 80     # box size 
+
+color1 F7F7F7 # text top   / text active  
+color2 0A465B # ligne top  / blue 
+color3 687176 # text bottom/ text disable  
+color4 00BBF4
+
+
+TEXT
+# Memory
+${voffset 8}${offset 8}${font FreeSans:size=10:bold}${color1}Memory Usage ${color2} 
+${hr 2}
+${voffset 8}${offset 8}${color3}${font FreeSans:bold:size=8}RAM ${font FreeSans:size=8}${alignr}$color1${mem /} ${color4}${membar 8,80 /}
+${voffset 8}${offset 8}${color3}${font FreeSans:bold:size=8}vg-root ${alignr}$color1${fs_used_perc /}% ${color4}${fs_bar 8,80 /}
+
+# Process overview
+${voffset 8}${offset 8}${color1}${font FreeSans:size=10:bold}Process overview ${color2} 
+${hr 2}
+${offset 8}${color3}${font FreeSans:bold:size=8}Application${alignr}CPU${font FreeSans:size=8}${alignr}
+${offset 8}${color1}${top name 1}${alignr}${top cpu 1}
+${offset 8}${color1}${top name 2}${alignr}${top cpu 2}
+${offset 8}${color1}${top name 3}${alignr}${top cpu 3}
+${offset 8}${color1}${top name 4}${alignr}${top cpu 4}
+${offset 8}${color1}${top name 5}${alignr}${top cpu 5}
+${offset 8}${color1}${top name 6}${alignr}${top cpu 6}
+${offset 8}${color1}${top name 7}${alignr}${top cpu 7}
+${offset 8}${color1}${top name 8}${alignr}${top cpu 8}
+${offset 8}${color1}${top name 9}${alignr}${top cpu 9}
+${offset 8}${color1}${top name 10}${alignr}${top cpu 10}
+
+${color2} ${hr 0.1}
+
+${offset 8}${color3 }${font FreeSans:bold:size=8}Application${alignr}RAM${font FreeSans:size=8}${alignr}
+${offset 8}${color1}${top_mem name 1}${alignr}${top_mem mem_res 1}
+${offset 8}${color1}${top_mem name 2}${alignr}${top_mem mem_res 2}
+${offset 8}${color1}${top_mem name 3}${alignr}${top_mem mem_res 3}
+${offset 8}${color1}${top_mem name 4}${alignr}${top_mem mem_res 4}
+${offset 8}${color1}${top_mem name 5}${alignr}${top_mem mem_res 5}
+${offset 8}${color1}${top_mem name 6}${alignr}${top_mem mem_res 6}
+${offset 8}${color1}${top_mem name 7}${alignr}${top_mem mem_res 7}
+${offset 8}${color1}${top_mem name 8}${alignr}${top_mem mem_res 8}
+${offset 8}${color1}${top_mem name 9}${alignr}${top_mem mem_res 9}
+
