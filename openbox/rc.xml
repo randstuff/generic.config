@@ -391,6 +391,13 @@
         <command>google-chrome</command>
       </action>
     </keybind>
+    <keybind key="W-l">
+      <action name="Execute">
+        <command>$HOME/lock.sh</command>
+      </action>
+    </keybind>
+
+
 
 
 
