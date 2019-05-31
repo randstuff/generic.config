@@ -19,7 +19,7 @@ minimum_size 500 80   # box size
 # maximum_size 220
 draw_shades no
 draw_outline no
-draw_borders no
+draw_borders yes
 draw_graph_borders yes
 default_color 0A465B
 default_shade_color 101010

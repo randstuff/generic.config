@@ -18,13 +18,13 @@ minimum_size 500 80   # box size
 # maximum_size 220
 draw_shades no
 draw_outline no
-draw_borders no
+draw_borders yes 
 draw_graph_borders yes
 default_color 0A465B
 default_shade_color 101010
 
 gap_x 40#320
-#gap_y 860#530
+gap_y 50#530
 no_buffers yes
 cpu_avg_samples 1
 uppercase no
@@ -38,17 +38,15 @@ minimum_size 300 80     # box size
 
 color1 F7F7F7 # text top 
 color2 0A465B # ligne top  
-color3 687176 # text bottom 
+color3 687176    # text bottom 
 color4 00BBF4
 
-
 TEXT
-${voffset 4}${offset 8}${color1}${font FreeSans:size=10:bold}Browsing Endpoints ${color2} 
+${voffset 8}${offset 8}${color1}${font FreeSans:size=10:bold}Network Bandwidth ${color2} 
 ${hr 2}
 # ${voffset 4}${offset 8}${color3}${font FreeSans:size=10}${execi 4 echo $(date)  }
-${offset 8}${color1}${font FreeSans:size=8}Default Public IP : ${font FreeSans:size=8}${alignr}${color4}${execi 3600 wget -q -O /dev/stdout http://checkip.dyndns.org/ | cut -d : -f 2- | cut -d \< -f -1}
-${offset 8}${color1}${font FreeSans:size=8}Public IP (Chrome) : ${font FreeSans:size=8}${alignr}${color4}${execi 3600 echo -n "N/A"}
-${offset 8}${color1}${font FreeSans:size=8}Public IP (Firefox) : ${font FreeSans:size=8}${alignr}${color4}${execi 3600 echo -n "N/A"}
-${offset 8}${color1}${font FreeSans:size=8}Public IP (TOR) : ${font FreeSans:size=8}${alignr}${color4}${execi 3600 echo -n "N/A"}
-
+${offset 8}${font FreeSans:bold:size=7}${color1 34d9c3} $color4${downspeedf enp8s0} kB/s ${alignr}${color1} Total DL $color3 ${totaldown enp8s0}
+${color4} ${offset 8}${downspeedgraph enp8s0 40,0 $color4 }
+${offset 8}${font FreeSans:bold:size=7}${color1 34d9c3} $color4${upspeedf enp8s0} kB/s ${alignr}${color1} Total UP $color3 ${totalup enp8s0}
+${color4} ${offset 8}${upspeedgraph enp8s0 40,0 $color4}
 

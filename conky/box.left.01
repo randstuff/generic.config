@@ -1,0 +1,54 @@
+background no
+alignment top_left 
+font FreeSans:size=10
+#xftfont sans:size=10
+use_xft yes
+xftalpha 0.9
+update_interval 1
+total_run_times 0
+own_window yes
+#own_window_type dock
+own_window_transparent yes
+own_window_hints undecorated,below,sticky,skip_taskbar,skip_pager
+own_window_argb_visual true
+own_window_argb_value 180
+own_window_colour   # background color 
+double_buffer yes
+minimum_size 500 80   # box size 
+# maximum_size 220
+draw_shades no
+draw_outline no
+draw_borders yes
+draw_graph_borders yes
+default_color 0A465B
+default_shade_color 101010
+
+gap_x 360#320
+gap_y 50#530
+no_buffers yes
+cpu_avg_samples 1
+uppercase no
+# border_inner_margin 15
+# default_bar_size 144 6
+
+# colors
+
+own_window_colour 0D1E28 # 0D1E28 # background color 
+minimum_size 300 80     # box size 
+
+color1 F7F7F7 # text top 
+color2 0A465B # ligne top  
+color3 687176 # text bottom 
+color4 00BBF4
+
+
+TEXT
+${voffset 4}${offset 8}${color1}${font FreeSans:size=10:bold}Browsing Endpoints ${color2} 
+${hr 2}
+# ${voffset 4}${offset 8}${color3}${font FreeSans:size=10}${execi 4 echo $(date)  }
+${offset 8}${color1}${font FreeSans:size=8}Default Public IP : ${font FreeSans:size=8}${alignr}${color4}${execi 3600 wget -q -O /dev/stdout http://checkip.dyndns.org/ | cut -d : -f 2- | cut -d \< -f -1}
+${offset 8}${color1}${font FreeSans:size=8}Public IP (Chrome) : ${font FreeSans:size=8}${alignr}${color4}${execi 3600 echo -n "N/A"}
+${offset 8}${color1}${font FreeSans:size=8}Public IP (Firefox) : ${font FreeSans:size=8}${alignr}${color4}${execi 3600 echo -n "N/A"}
+${offset 8}${color1}${font FreeSans:size=8}Public IP (TOR) : ${font FreeSans:size=8}${alignr}${color4}${execi 3600 echo -n "N/A"}
+
+
